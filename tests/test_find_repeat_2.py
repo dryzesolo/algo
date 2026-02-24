@@ -14,6 +14,7 @@ def test_simple_cases(arr, expected):
     result = find_repeat(len(arr), arr)
     assert result == expected
 
+
 def test_multiple_duplicates():
     arr = [1, 2, 3, 2, 1, 4]
     result = find_repeat(len(arr), arr)
@@ -25,6 +26,7 @@ def test_no_modification():
     original = arr.copy()
     find_repeat(len(arr), arr)
     assert arr == original
+
 
 def test_large_n():
     n = 1000000
