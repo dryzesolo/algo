@@ -1,6 +1,6 @@
 import pytest
 import random
-from tasks.find_repeat_2 import find_repeat
+from tasks import find_repeat
 
 @pytest.mark.parametrize("arr, expected", [
     ([1, 2, 4, 5, 6, 1, 0, 3], 1),
